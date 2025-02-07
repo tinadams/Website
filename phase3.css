@@ -1,0 +1,172 @@
+body { font-family: Helvetica, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: white;
+       color: #333; }
+
+#wrapper { background-color: #1E1E1E;
+    	   margin: 0 auto;
+    	   width: 80%;
+    	   min-width: 1000px;
+    	   max-width: 1280px;
+		   color: #D3D3D3; }
+
+nav { text-align: center;
+      padding: 1em;
+      background-color: #444444; }
+
+nav a { text-decoration: none;
+    	color: white; }
+
+nav a:hover { background-color: #6F706E;
+    		  color: black; }
+
+header { text-align: center;
+    	 padding: 1em; }
+
+main { padding: 20px;
+       display: block; }
+
+.background-image { background-image: url('images/mountains.jpg');
+    				background-size: cover;
+    				background-position: center;
+    				height: 400px; }
+
+.overlay { background: rgba(0, 0, 0, 0.5);
+    	   color: white;
+           padding: 20px;
+           text-align: center; }
+
+footer { background-color: #333333;
+		 font-size: 0.60em;
+		 color: white;
+		 text-align: center;
+		 padding: 1em;
+		 margin-top: 20px;
+		 font-style: italic; }
+
+footer a { color: white; }
+
+footer a:hover { background-color: #6F706E;
+				 color: black; }
+
+h1, h3 { color: #444444; }
+
+p { line-height: 1; }
+
+p a { color: white; }
+
+a { color: #333333; }
+
+a:hover { color: #007BFF; }
+
+form { display: flex;
+       flex-direction: column;
+       padding-left: 1em;
+       width: 50%; }
+
+.gallery { display: grid;
+    	   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    	   gap: 10px;
+    	   padding: 20px; }
+
+.gallery img { width: 100%;
+    		   height: auto;
+               border-radius: 2px; }
+
+.about { padding: 20px; }
+
+.about_content { display: flex;
+    			 flex-wrap: wrap;
+    			 gap: 20px; }
+
+.about_image { width: auto;
+    		   height: auto;
+    		   flex: 1 1 100px; 
+    		   max-width: 200px; }
+
+.about_text { flex: 2 1 400px;
+    		  color: #D3D3D3; }
+    		  
+.blog_gallery { display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 20px;
+                padding: 20px; }
+
+.post { background-color: #D3D3D3;
+        padding: 20px;
+        border-radius: 5px; }
+        
+.description { color: white; }
+        
+.shop_gallery { display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 20px;
+                padding: 20px; }
+
+.product { background-color: #D3D3D3;
+           padding: 20px;
+           text-align: center;
+           border-radius: 5px;
+		   text-decoration: none; }
+           
+.product img { width: 100%;
+    		   height: auto;
+			   border-radius: 5px; }
+.citation { margin-bottom: 2em;
+    		padding: 1em;
+    		background-color: #f9f9f9;
+    		border: 1px solid #ddd;
+    		border-radius: 5px; }
+
+.citation p { margin: 0.5em 0; }
+
+.citation a { color: black; }
+			   
+.citation_image { display: block;
+    			  max-width: 40%; 
+    			  height: auto;
+    			  margin-top: 1em; }
+
+@media (max-width: 1200px) {
+    #wrapper { width: 90%;
+        	   min-width: 800px; }
+}
+
+@media (max-width: 1000px) {
+    #wrapper { width: 90%;
+        	   min-width: 600px; }
+}
+
+@media (max-width: 800px) {
+    nav { display: flex;
+          flex-wrap: wrap;
+          justify-content: center; }
+    nav a { margin: 5px; }
+    #wrapper { width: 100%;
+        	   min-width: 100%; }
+}
+
+@media (max-width: 600px) {
+    .gallery { grid-template-columns: 1fr; }
+    form { grid-template-columns: 1fr; }
+}
+
+
+@media (max-width: 800px) {
+    .about_content { flex-direction: column;
+    				 align-items: center; }
+    .about_image { max-width: 100%;
+        		   margin: 0 auto; }
+    .about_text { text-align: center; }
+}
+
+@media (max-width: 800px) {
+    .citation {
+        padding: 0.5em;
+    }
+
+    .citation_image {
+        max-width: 90%;
+    }
+}
